@@ -3,6 +3,7 @@ from classes.magic import spell
 from classes.inventory import item
 import random
 
+# please don't lose here atleast!!
 
 # create black magic
 fire = spell('Fire', 10, 100, 'black')
@@ -202,10 +203,8 @@ while running:
 
                 if players[target].get_hp() == 0:
                     print(bcolors.FAIL + players[target].name + ' has died' + bcolors.ENDC)
-                    del players[player]
+                    del players[target]
            # print(bcolors.FAIL + enemy.name + 'chose ' + spell.name + ' damage is ' + str(magic_dmg) + bcolors.ENDC)
 
     print('------------------------------------------------------------------------------------------------------------')
-    print(bcolors.WARNING + 'Next turn' + bcolors.ENDC)
-
-    
+    print(bcolors.WARNING + 'Next turn' + bcolors.ENDC)    

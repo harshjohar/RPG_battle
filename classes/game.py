@@ -126,7 +126,7 @@ class person:
                 bcolors.BOLD + '|   ' + str(self.mp) + '/' + str(self.maxmp) + '|' + bcolors.OKBLUE + mp_bar + bcolors.ENDC + '|')
 
     def choose_enemy_spell(self):
-        magic_choice = random.randrange(0, len(self.magic))
+        magic_choice = random.randrange(0, len(self.magic) - 1)
         spell = self.magic[magic_choice]
         magic_dmg = spell.generate_damage()
 
